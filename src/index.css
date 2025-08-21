@@ -1,0 +1,27 @@
+
+@import "tailwindcss";
+@font-face {
+  font-family: 'ROBOTO';
+  src: url('/src/assets/fonts/Roboto-VariableFont_wdth,wght.ttf') format('ttf'),
+       url('/src/assets/fonts/Roboto-VariableFont_wdth,wght.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'ROBOTO', sans-serif;
+}
+
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1b2330;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
