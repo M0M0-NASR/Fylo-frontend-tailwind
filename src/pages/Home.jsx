@@ -1,16 +1,16 @@
 function Home() {
   return (
-    <section className="home py-[150px]">
+    <section className="home py-[150px] ">
       <div className="container flex flex-col justify-center items-center">
-        <div>
+        <div className="animate-updown ">
           <img src="/src/assets/imgs/illustration-intro.png"></img>
         </div>
-        <h4>
+        <h1 className=" text-[30px] font-bold py-[20px] text-center">
           All your files in one secure location,
           <br></br>
           accessible anywhere.
-        </h4>
-        <p>
+        </h1>
+        <p className="text-center leading-[1.6]">
           Fylo stores all your most important files in one secure location.
           <br></br>
           Access them wherever you need, share and collaborate with
