@@ -29,7 +29,7 @@ function Header() {
       className="w-full top-0 z-50 py-[50px] transition-all duration-200 fixed bg-transparent"
     >
       <div className="container mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
-        <div className="logo">
+        <div className="logo  ">
           <img src="/src/assets/imgs/logo.svg" alt="Logo" />
         </div>
         <ul className="flex items-center gap-[50px] text-white ">

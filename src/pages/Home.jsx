@@ -1,7 +1,7 @@
 function Home() {
   return (
-    <section className="home py-[150px] ">
-      <div className="container flex flex-col justify-center items-center">
+    <section className="w-full home py-[150px] ">
+      <div className="container mx-auto flex flex-col sm:justify-center items-center">
         <div className="animate-updown ">
           <img src="/src/assets/imgs/illustration-intro.png"></img>
         </div>
