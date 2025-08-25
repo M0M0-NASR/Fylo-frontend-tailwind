@@ -1,3 +1,4 @@
+import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 function Footer() {
   return (
     <footer className=" bg-[#171f2a] text-white py-[50px] mt-[100px]">
@@ -18,6 +19,7 @@ function Footer() {
               , family and co-workers
             </p>
           </div>
+
           <div className="contacts flex flex-col items-start gap-[20px] my-[50px]">
             <div className="flex items-start gap-[20px]">
               <img
@@ -35,6 +37,76 @@ function Footer() {
               />
               <p>mohamednasrmahmod@gmail.com</p>
             </div>
+          </div>
+
+          <ul className="grid justify-center grid-flow-col grid-rows-4 place-items-start gap-x-[50px] gap-[10px] my-[50px] opacity-[0.8]">
+            <li>
+              <a
+                href="#"
+                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+              >
+                About
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+              >
+                Jobs
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+              >
+                Press
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+              >
+                Contact Us
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+              >
+                Terms
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+              >
+                Privacy
+              </a>
+            </li>
+          </ul>
+          <div className="socials flex items-center justify-end gap-[20px] my-[50px]">
+            <a href="#">
+              <FaFacebookF />
+            </a>
+            <a href="#">
+              <FaTwitter />
+            </a>
+            <a href="#">
+              <FaInstagram />
+            </a>
           </div>
         </div>
       </div>
