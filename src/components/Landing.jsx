@@ -1,6 +1,6 @@
 function Home() {
   return (
-    <section className="w-full home py-[150px] ">
+    <section className="w-full home pt-[150px] ">
       <div className="container mx-auto flex flex-col sm:justify-center items-center">
         <div className="animate-updown ">
           <img src="/src/assets/imgs/illustration-intro.png"></img>
@@ -20,6 +20,7 @@ function Home() {
         <button className="my-[20px] py-[12px] px-[100px] main-btn">
           Get Started
         </button>
+        
       </div>
     </section>
   );

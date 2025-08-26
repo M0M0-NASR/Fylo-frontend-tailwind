@@ -28,7 +28,14 @@ function Features() {
     },
   ]);
   return (
-    <section className="features py-[30px] ">
+    <section className="features py-[5px] ">
+      <div className=" w-full h-[200px] relative -top-[150px] z-[-100]">
+        <img
+          src="src/assets/imgs/bg-curvy-desktop.svg"
+          className="w-full h-full"
+        ></img>
+      </div>
+
       <div className="container mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-center items-center ">
           {features.map((feature) => (
