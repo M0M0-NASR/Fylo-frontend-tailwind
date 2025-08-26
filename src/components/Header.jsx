@@ -37,7 +37,7 @@ function Header() {
             <li key={link.id}>
               <a
                 href={`${link.url}`}
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+                className="whitespace-nowrap text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
               >
                 {link.name}
               </a>

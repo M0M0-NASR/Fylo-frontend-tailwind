@@ -69,7 +69,7 @@ function Footer() {
                 <a
                   key={link.id}
                   href={link.default}
-                  className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+                  className=" whitespace-nowrap text-white bg-transparent  hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] hover:underline  duration-300 m-[20px]"
                 >
                   {link.data}
                 </a>
