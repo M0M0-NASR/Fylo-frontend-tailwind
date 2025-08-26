@@ -28,7 +28,7 @@ function Features() {
     },
   ]);
   return (
-    <section className="features py-[5px] ">
+    <section className="features py-[5px] pb-[100px] ">
       <div className=" w-full h-[200px] relative -top-[150px] z-[-100]">
         <img
           src="src/assets/imgs/bg-curvy-desktop.svg"

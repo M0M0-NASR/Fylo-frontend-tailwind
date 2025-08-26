@@ -33,7 +33,15 @@ header
   background-color: var(--second-background-color);
 }
 
- 
+.stayProductive{
+  background-color: var(--second-background-color);
+
+}
+
+ .opinions{
+  background-color: var(--second-background-color);
+
+ }
  @keyframes upDown {
       0%, 100% { transform: translateY(0); }
       50% { transform: translateY(-20px); }
@@ -41,6 +49,33 @@ header
     .animate-updown {
       animation: upDown 2s infinite ease-in-out;
     }
+
+@keyframes left-right {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+} 
+
+
+@keyframes floatspin {
+  0%   { transform: translateY(0) rotate(0deg); }
+  25%  { transform: translateY(-10px) rotate(90deg); }
+  50%  { transform: translateY(0) rotate(180deg); }
+  75%  { transform: translateY(10px) rotate(270deg); }
+  100% { transform: translateY(0) rotate(360deg); }
+}
+
+:hover .animate-rounded  {
+  animation: floatspin 4s infinite ease-in-out;
+}
+
+
+
+
+.animate-left-right {
+  animation: left-right 1s infinite ease-in-out;
+}
+
+
 
 
     /* Disable animation for small & medium screens */
