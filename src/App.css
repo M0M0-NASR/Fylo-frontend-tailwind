@@ -16,7 +16,7 @@ html {
 /* variables */
   --main-background-color: #1b2330;
   --main-btn-color: #4ec3d4;
-
+  --second-background-color: #171f2a;
 }
 
 
@@ -28,6 +28,10 @@ header
   background-color: var(--main-background-color);
 }
 
+.features 
+{
+  background-color: var(--second-background-color);
+}
 
  
  @keyframes upDown {
