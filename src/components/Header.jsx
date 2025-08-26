@@ -15,10 +15,10 @@ function Header() {
     window.addEventListener("scroll", () => {
       if (window.scrollY > 100) {
         headerRef.current.style.background = "#171f2a";
-        headerRef.current.style.padding = "20px 0";
+        headerRef.current.style.padding = "20px 20px";
       } else {
         headerRef.current.style.background = "transparent";
-        headerRef.current.style.padding = "60px 0";
+        headerRef.current.style.padding = "60px 20px";
       }
     });
   }, [headerRef]);
@@ -28,11 +28,11 @@ function Header() {
       ref={headerRef}
       className="w-full top-0 z-50 py-[50px] transition-all duration-200 fixed bg-transparent"
     >
-      <div className="container mx-auto flex flex-col items-center sm:flex-row sm:justify-between">
-        <div className="logo  ">
+      <div className="container mx-auto flex flex-col items-center justify-around sm:flex-row sm:justify-between">
+        <div className="logo">
           <img src="/src/assets/imgs/logo.svg" alt="Logo" />
         </div>
-        <ul className="flex items-center gap-[50px] text-white ">
+        <ul className="flex items-center gap-[50px] text-white px-[40px]">
           {links.map((link) => (
             <li key={link.id}>
               <a

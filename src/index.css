@@ -10,6 +10,14 @@
   --breakpoint-2xl: 1400px;
 }
 
+
+
+
+@layer{
+  .main-btn{
+    @apply bg-[var(--main-btn-color)] text-white rounded-full hover:bg-[#8bd9e3] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] transition duration-500
+  }
+}
 @font-face {
   font-family: 'ROBOTO';
   src: url('/src/assets/fonts/Roboto-VariableFont_wdth,wght.ttf') format('ttf'),
