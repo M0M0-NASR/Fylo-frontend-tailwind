@@ -4,9 +4,9 @@ import "../App.css";
 
 function Header() {
   const [links, setLinks] = useState([
-    { id: 1, name: "Features", url: "/features" },
-    { id: 2, name: "Teams", url: "/teams" },
-    { id: 3, name: "Sign in", url: "/signin" },
+    { id: 1, name: "Features", url: "#" },
+    { id: 2, name: "Teams", url: "#" },
+    { id: 3, name: "Sign in", url: "#" },
   ]);
 
   const headerRef = useRef();

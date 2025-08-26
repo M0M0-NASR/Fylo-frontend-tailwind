@@ -17,7 +17,7 @@ function Home() {
           <br></br>
           friends , family and co-workers.
         </p>
-        <button className="my-[20px] py-[12px] px-[100px] bg-[#4ec3d4] text-white rounded-full hover:bg-[#8bd9e3] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] transition duration-500">
+        <button className="my-[20px] py-[12px] px-[100px] bg-[var(--main-btn-color)] text-white rounded-full hover:bg-[#8bd9e3] hover:shadow-[0_0_30px_rgba(59,130,246,0.4)] transition duration-500">
           Get Started
         </button>
       </div>

@@ -1,5 +1,15 @@
 
 @import "tailwindcss";
+
+@theme{
+  --breakpoint-*: initial;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --breakpoint-2xl: 1400px;
+}
+
 @font-face {
   font-family: 'ROBOTO';
   src: url('/src/assets/fonts/Roboto-VariableFont_wdth,wght.ttf') format('ttf'),
@@ -11,7 +21,6 @@
 body {
   font-family: 'ROBOTO', sans-serif;
 }
-
 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

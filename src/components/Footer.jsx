@@ -1,13 +1,32 @@
+import { useState } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 function Footer() {
+  const [contacts, setContacts] = useState([
+    { id: 1, icon: "icon-phone", data: "201279639639" },
+    { id: 2, icon: "icon-email", data: "mohamednasrmahmod@gmail.com" },
+  ]);
+
+  const [links, setLinks] = useState([
+    { id: 1, default: "#", link: "about", data: "About us" },
+    { id: 2, default: "#", link: "jobs", data: "Jobs" },
+    { id: 3, default: "#", link: "press", data: "Press" },
+    { id: 4, default: "#", link: "blog", data: "Blog" },
+    { id: 5, default: "#", link: "contact", data: "Contact Us" },
+    { id: 6, default: "#", link: "terms", data: "Terms" },
+    { id: 7, default: "#", link: "privacy", data: "Privacy" },
+  ]);
   return (
-    <footer className=" bg-[#171f2a] text-white py-[50px] mt-[100px]">
+    <footer className=" bg-[#171f2a] text-white py-[50px] mt-[100px] px-[20px]">
       <div className="container mx-auto flex flex-col ">
         <div className="logo mb-[20px] sm:mb-0 w-[100px]">
           <img src="/src/assets/imgs/logo.svg" alt="Logo" />
         </div>
-        <div className="holder grid grid-cols-4 items-start gap-[20px]">
-          <div className="location flex items-start gap-[20px] my-[50px]">
+
+        <div
+          className="holder grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4
+         items-start gap-[50px] "
+        >
+          <div className="location flex items-start gap-[20px] my-[50px] ">
             <img
               src="/src/assets/imgs/icon-location.svg"
               className="w-[15px] mt-[5px]"
@@ -19,85 +38,45 @@ function Footer() {
               , family and co-workers
             </p>
           </div>
-
-          <div className="contacts flex flex-col items-start gap-[20px] my-[50px]">
-            <div className="flex items-start gap-[20px]">
-              <img
-                src="/src/assets/imgs/icon-phone.svg"
-                className="w-[15px] mt-[5px]"
-                alt="phone"
-              />
-              <p>1-543-123-4567</p>
-            </div>
-            <div className="flex items-start gap-[20px]">
-              <img
-                src="/src/assets/imgs/icon-email.svg"
-                className="w-[15px] mt-[5px]"
-                alt="email"
-              />
-              <p>mohamednasrmahmod@gmail.com</p>
-            </div>
+          <div className="contacts flex flex-col gap-[30px] my-[50px]">
+            {contacts.map((contact) => (
+              <div
+                key={contact.id}
+                className="flex items-center justify-center md:justify-start gap-[10px]"
+              >
+                <img
+                  src={"/src/assets/imgs/" + contact.icon + ".svg"}
+                  className="w-[15px] mt-[5px]"
+                  alt={contact.icon}
+                />
+                <a
+                  href={
+                    contact.id == 1
+                      ? "https://wa.me/201279639639"
+                      : "mailto:mohamednasrmahmood@gmail.com"
+                  }
+                  target="parent"
+                  className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[1px]"
+                >
+                  {contact.data}
+                </a>
+              </div>
+            ))}
           </div>
-
           <ul className="grid justify-center grid-flow-col grid-rows-4 place-items-start gap-x-[50px] gap-[10px] my-[50px] opacity-[0.8]">
-            <li>
-              <a
-                href="#"
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
-              >
-                Jobs
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
-              >
-                Press
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
-              >
-                Blog
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
-              >
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
-              >
-                Terms
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
-              >
-                Privacy
-              </a>
-            </li>
+            {links.map((link) => (
+              <li key={link.id}>
+                <a
+                  key={link.id}
+                  href={link.default}
+                  className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[20px]"
+                >
+                  {link.data}
+                </a>
+              </li>
+            ))}
           </ul>
-          <div className="socials flex items-center justify-end gap-[20px] my-[50px]">
+          <div className="socials flex items-center justify-center gap-[20px] my-[50px]">
             <a href="#">
               <FaFacebookF />
             </a>
