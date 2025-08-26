@@ -56,7 +56,7 @@ function Footer() {
                       : "mailto:mohamednasrmahmood@gmail.com"
                   }
                   target="parent"
-                  className="text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[1px]"
+                  className=" text-[.9rem] text-white opacity-[0.8] hover:opacity-[1] hover:underline transition-opacity duration-300 p-[1px]"
                 >
                   {contact.data}
                 </a>
