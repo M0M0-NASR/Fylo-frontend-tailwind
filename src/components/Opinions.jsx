@@ -25,7 +25,7 @@ function Opinions() {
     },
   ]);
   return (
-    <section className="opinions bg-[--main-color] sm:py-[100px] sm:pb-[300px]">
+    <section className="opinions bg-[--main-color] sm:py-[100px] sm:pb-[100px]">
       <div className="container mx-auto">
         <div className="relative sm:top-[25px] sm:left-[10px] w-[0px] sm:w-[40px]">
           <img className="w-[50px]" src="src/assets/imgs/bg-quotes.png"></img>
