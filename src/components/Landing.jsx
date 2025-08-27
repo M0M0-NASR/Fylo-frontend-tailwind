@@ -1,5 +1,4 @@
-import hero from "./src/assets/imgs/illustration-intro.png";
-
+import hero from "../assets/imgs/illustration-intro.png";
 function Home() {
   return (
     <section className="w-full home pt-[150px] ">
