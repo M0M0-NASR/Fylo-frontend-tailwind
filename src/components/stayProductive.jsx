@@ -10,7 +10,7 @@ function stayProductive() {
             <img src={StayProductive} alt="Stay Productive" />
           </div>
           <div className="info flex flex-col justify-center gap-y-[10px] my-[20px]">
-            <h1 className="text-[40px] font-bold">
+            <h1 className=" text-[1.5rem] sm:text-[40px] font-bold">
               Stay productive,
               <br></br>
               Wherever you are
