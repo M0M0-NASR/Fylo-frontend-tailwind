@@ -10,29 +10,28 @@ function stayProductive() {
             <img src={StayProductive} alt="Stay Productive" />
           </div>
           <div className="info flex flex-col justify-center gap-y-[10px] my-[20px]">
-            <h1 className="text-[40px]">
+            <h1 className="text-[40px] font-bold">
               Stay productive,
               <br></br>
               Wherever you are
             </h1>
             <div className=" text-white opacity-60 flex flex-col gap-y-[30px]">
               <p>
-                Fylo stores all your most important files in one secure
-                location. Access them wherever you need, share and collaborate
-                with friends , family and co-workers
+                Never let location be an issue when accessing your files. Fylo
+                has you covered for all off your file storage needs.
               </p>
 
               <p>
-                Fylo stores all your most important files in one secure
-                location. Access them wherever you need, share and collaborate
-                with friends , family and co-workers
+                Securely share files and folders with friends, famliy and
+                colleagues for live collaboration. No email attachments
+                required.
               </p>
             </div>
             <a
               href="#"
               className=" w-[180px] inline-block text-[20px] pb-[10px] border-b-2   border-transparent hover:border-b-2  hover:[text-shadow:_0_0_4px_rgba(255,255,255,0.6),_0_0_8px_rgba(255,255,255,0.4)]    hover:border-white transition-all duration-300 text-white opacity-80 hover:opacity-100"
             >
-              Stay Productive
+              See how Fylo works
               <img
                 className="inline ml-2 w-[25px] animate-left-right"
                 src={iconArrow}

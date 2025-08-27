@@ -9,36 +9,39 @@ function Opinions() {
   const [opinions, setOpinions] = useState([
     {
       id: 1,
-      text: `Fylo stores all your most important files in one secure location.Access them wherever you need, share and collaborate with friends, family and co-workers`,
+      text: `Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.`,
       imgProfile: profile1,
       name: " Peter Mimie",
       job: "CEO & Founder",
     },
     {
       id: 2,
-      text: `Fylo stores all your most important files in one secure location.Access them wherever you need, share and collaborate with friends, family and co-workers`,
+      text: `Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.`,
       imgProfile: profile2,
       name: " Peter Mimie",
       job: "CEO & Founder",
     },
     {
       id: 3,
-      text: `Fylo stores all your most important files in one secure location.Access them wherever you need, share and collaborate with friends, family and co-workers`,
+      text: `Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.`,
       imgProfile: profile3,
-      name: " Peter Mimie",
+      name: "Iva Boyd",
       job: "CEO & Founder",
     },
   ]);
   return (
-    <section className="opinions bg-[--main-color] sm:py-[100px] sm:pb-[100px]">
-      <div className="container mx-auto">
+    <section className=" perspective-[800px] opinions bg-[--main-color] sm:py-[100px] sm:pb-[100px]">
+      <div className="container perspective-[5000px]  mx-auto">
         <div className="relative sm:top-[25px] sm:left-[10px] w-[0px] sm:w-[40px]">
           <img className="w-[50px]" src={bgQuotes}></img>
         </div>
 
-        <div className="holder grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+        <div className=" holder grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {opinions.map((opinion) => (
-            <div key={opinion.id} className=" m-[10px] sm:m-[10px] py-[50px] px-[10px] bg-gray-800 rounded-[20px]">
+            <div
+              key={opinion.id}
+              className="  m-[10px] sm:m-[10px] py-[50px] px-[10px] bg-gray-800 rounded-[20px]"
+            >
               <p>{opinion.text}</p>
               <div className="info-holder flex flex-row pt-[10px]">
                 <div className="w-[20%]">

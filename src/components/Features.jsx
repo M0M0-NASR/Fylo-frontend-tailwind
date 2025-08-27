@@ -15,26 +15,26 @@ function Features() {
     {
       id: 1,
       icon: feat1,
-      title: "Icon - collaboration",
-      paragraph: `Fylo stores all your most important files in one secure location.Access them wherever you need, share and collaborate with friends, family and co-workers`,
+      title: "Access your file, anywhere",
+      paragraph: `The ability to use a smartphone, tablet, or computer to access your account means your files follow you everywhere.`,
     },
     {
       id: 2,
       icon: feat2,
-      title: "Icon - collaboration",
-      paragraph: `Fylo stores all your most important files in one secure location.Access them wherever you need, share and collaborate with friends, family and co-workers`,
+      title: "Security you can trust",
+      paragraph: `2-factor authentication and user-controlled encryption are just a couple of the security features we allow to help secure your files.`,
     },
     {
       id: 3,
       icon: feat3,
-      title: "Icon - collaboration",
-      paragraph: `Fylo stores all your most important files in one secure location.Access them wherever you need, share and collaborate with friends, family and co-workers`,
+      title: "Real-time collaboration",
+      paragraph: `Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.`,
     },
     {
       id: 4,
       icon: feat4,
-      title: "Icon - collaboration",
-      paragraph: `Fylo stores all your most important files in one secure location.Access them wherever you need, share and collaborate with friends, family and co-workers`,
+      title: "Store any type of file",
+      paragraph: `Securely share files and folders with friends, family and colleagues for live collaboration. No email attachments required.`,
     },
   ]);
   return (
@@ -53,7 +53,9 @@ function Features() {
               <div>
                 <img src={feature.icon}></img>
               </div>
-              <h2 className="py-[20px]">{feature.title}</h2>
+              <h2 className="py-[20px] text-[30px] font-bold">
+                {feature.title}
+              </h2>
               <p className="text-center">{feature.paragraph}</p>
             </div>
           ))}

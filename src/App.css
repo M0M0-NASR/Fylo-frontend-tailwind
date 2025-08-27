@@ -1,8 +1,6 @@
 
-
-
 html {
-        scroll-behavior: smooth; /* 👈 makes all # links smooth */
+        scroll-behavior: smooth;
       } 
 
 #root {
@@ -17,10 +15,6 @@ html {
   --main-btn-color: #4ec3d4;
   --second-background-color: #171f2a;
 }
-
-
-
-
 
 header 
 {
@@ -69,6 +63,12 @@ header
   100% { transform: translateY(0) rotate(360deg); }
 }
 
+@keyframes pop3d {
+  0%   { transform: translateZ(0); }
+  50%  { transform: translateZ(50px); }
+  100% { transform: translateZ(0) ; background-color: red; }
+}
+
 :hover .animate-rounded  {
   animation: floatspin 4s infinite ease-in-out;
 }
@@ -76,6 +76,7 @@ header
 .animate-left-right {
   animation: left-right 1s infinite ease-in-out;
 }
+
 
 
     /* Disable animation for small & medium screens */

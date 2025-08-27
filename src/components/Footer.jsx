@@ -3,7 +3,6 @@ import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 import iconPhone from "../assets/imgs/icon-phone.svg";
 import iconEmail from "../assets/imgs/icon-email.svg";
 import logo from "../assets/imgs/logo.svg";
-
 import iconLocation from "../assets/imgs/icon-location.svg";
 function Footer() {
   const [contacts, setContacts] = useState([
@@ -81,14 +80,23 @@ function Footer() {
               </li>
             ))}
           </ul>
-          <div className="socials flex items-center justify-center gap-[20px] my-[50px]">
-            <a href="#">
+          <div className="socials flex items-center justify-center gap-[20px] my-[20px] sm:my-[50px]">
+            <a
+              className=" hover:text-[#4ec3d4] hover:underline transition-opacity duration-300"
+              href="#"
+            >
               <FaFacebookF />
             </a>
-            <a href="#">
+            <a
+              className=" hover:text-[#4ec3d4] hover:underline transition-opacity duration-300"
+              href="#"
+            >
               <FaTwitter />
             </a>
-            <a href="#">
+            <a
+              className=" hover:text-[#4ec3d4] hover:underline transition-all duration-400"
+              href="#"
+            >
               <FaInstagram />
             </a>
           </div>
