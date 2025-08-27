@@ -25,20 +25,20 @@ function Opinions() {
     },
   ]);
   return (
-    <section className="opinions bg-[--main-color] py-[100px]">
+    <section className="opinions bg-[--main-color] sm:py-[100px] sm:pb-[300px]">
       <div className="container mx-auto">
-        <div className="relative sm:top-[15px] sm:left-[0px] top-[60px] left-[20px]">
-          <img className="w-[50px] " src="src/assets/imgs/bg-quotes.png"></img>
+        <div className="relative sm:top-[25px] sm:left-[10px] w-[0px] sm:w-[40px]">
+          <img className="w-[50px]" src="src/assets/imgs/bg-quotes.png"></img>
         </div>
 
-        <div className="holder grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
+        <div className="holder grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
           {opinions.map((opinion) => (
-            <div className=" m-[40px] sm:m-[0px] py-[50px] px-[30px] bg-gray-800 rounded-[20px]">
+            <div className=" m-[10px] sm:m-[10px] py-[50px] px-[10px] bg-gray-800 rounded-[20px]">
               <p>{opinion.text}</p>
               <div className="info-holder flex flex-row pt-[10px]">
-                <div className="  ">
+                <div className="w-[20%]">
                   <img
-                    className="w-[50px]  rounded-full sm:mr-[20px]  "
+                    className="w-[50px]  rounded-full sm:mr-[0px]  "
                     src={"src/assets/imgs/" + opinion.imgProfile}
                   ></img>
                 </div>

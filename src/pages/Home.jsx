@@ -4,6 +4,7 @@ import Footer from "../components/Footer";
 import Features from "../components/Features";
 import StayProductive from "../components/stayProductive";
 import Opinions from "../components/Opinions";
+import Contact from "../components/Contact";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Features />
       <StayProductive />
       <Opinions />
+      <Contact />
       <Footer />
     </>
   );

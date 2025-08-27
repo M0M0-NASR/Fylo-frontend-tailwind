@@ -16,7 +16,7 @@ function Footer() {
     { id: 7, default: "#", link: "privacy", data: "Privacy" },
   ]);
   return (
-    <footer className=" bg-[#171f2a] text-white py-[50px] mt-[100px] px-[20px]">
+    <footer className=" bg-[#0c1524] text-white py-[200px] mt-[0px] px-[20px]">
       <div className="container mx-auto flex flex-col ">
         <div className="logo mb-[20px] sm:mb-0 w-[100px]">
           <img src="/src/assets/imgs/logo.svg" alt="Logo" />

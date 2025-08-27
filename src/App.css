@@ -68,14 +68,9 @@ header
   animation: floatspin 4s infinite ease-in-out;
 }
 
-
-
-
 .animate-left-right {
   animation: left-right 1s infinite ease-in-out;
 }
-
-
 
 
     /* Disable animation for small & medium screens */

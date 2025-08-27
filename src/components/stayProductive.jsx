@@ -1,6 +1,6 @@
 function stayProductive() {
   return (
-    <section className="stayProductive  pb-[100px]">
+    <section className="stayProductive  sm:pb-[100px]">
       <div className="container mx-auto">
         <div className="holder w-full flex flex-col md:flex-row py-[50px] px-[20px]">
           <div className="w-full animate-updown ">
