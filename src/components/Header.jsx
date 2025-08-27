@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from "react";
 
 import "../App.css";
 
+import logo from "../assets/imgs/logo.svg";
+
 function Header() {
   const [links, setLinks] = useState([
     { id: 1, name: "Features", url: "#" },
@@ -30,7 +32,7 @@ function Header() {
     >
       <div className="container mx-auto flex flex-col items-center justify-around sm:flex-row sm:justify-between">
         <div className="logo">
-          <img src="/src/assets/imgs/logo.svg" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
         <ul className="flex items-center gap-[50px] text-white px-[40px]">
           {links.map((link) => (

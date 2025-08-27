@@ -1,9 +1,14 @@
 import { useState } from "react";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import iconPhone from "../assets/imgs/icon-phone.svg";
+import iconEmail from "../assets/imgs/icon-email.svg";
+import logo from "../assets/imgs/logo.svg";
+
+import iconLocation from "../assets/imgs/icon-location.svg";
 function Footer() {
   const [contacts, setContacts] = useState([
-    { id: 1, icon: "icon-phone", data: "201279639639" },
-    { id: 2, icon: "icon-email", data: "mohamednasrmahmod@gmail.com" },
+    { id: 1, icon: iconPhone, data: "201279639639" },
+    { id: 2, icon: iconEmail, data: "mohamednasrmahmod@gmail.com" },
   ]);
 
   const [links, setLinks] = useState([
@@ -19,7 +24,7 @@ function Footer() {
     <footer className=" bg-[#0c1524] text-white py-[300px] mt-[0px] px-[20px]">
       <div className="container mx-auto flex flex-col ">
         <div className="logo mb-[20px] sm:mb-0 w-[100px]">
-          <img src="/src/assets/imgs/logo.svg" alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
 
         <div
@@ -28,7 +33,7 @@ function Footer() {
         >
           <div className="location flex items-start gap-[20px] my-[50px] ">
             <img
-              src="/src/assets/imgs/icon-location.svg"
+              src={iconLocation}
               className="w-[15px] mt-[5px]"
               alt="Location"
             />
@@ -45,7 +50,7 @@ function Footer() {
                 className="flex items-center justify-center md:justify-start gap-[10px]"
               >
                 <img
-                  src={"/src/assets/imgs/" + contact.icon + ".svg"}
+                  src={contact.icon}
                   className="w-[15px] mt-[5px]"
                   alt={contact.icon}
                 />
