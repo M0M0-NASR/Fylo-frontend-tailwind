@@ -53,7 +53,7 @@ function Features() {
               <div>
                 <img src={feature.icon}></img>
               </div>
-              <h2 className="py-[20px] text-[30px] font-bold">
+              <h2 className=" py-[20px] text-[1.4rem] sm:text-[1.5rem] font-bold">
                 {feature.title}
               </h2>
               <p className="text-center">{feature.paragraph}</p>

@@ -29,7 +29,7 @@ function stayProductive() {
             </div>
             <a
               href="#"
-              className=" w-[180px] inline-block text-[20px] pb-[10px] border-b-2   border-transparent hover:border-b-2  hover:[text-shadow:_0_0_4px_rgba(255,255,255,0.6),_0_0_8px_rgba(255,255,255,0.4)]    hover:border-white transition-all duration-300 text-white opacity-80 hover:opacity-100"
+              className=" w-[220px] inline-block text-[20px] pb-[10px] border-b-2   border-transparent hover:border-b-2  hover:[text-shadow:_0_0_4px_rgba(255,255,255,0.6),_0_0_8px_rgba(255,255,255,0.4)]    hover:border-white transition-all duration-300 text-white opacity-80 hover:opacity-100"
             >
               See how Fylo works
               <img
